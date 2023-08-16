@@ -1,0 +1,33 @@
+başlangıç 17.08.2023
+
+username = str(input("bir kullanıcı adı giriniz:"))
+password = str(input("bir şifre giriniz: "))
+
+if 'onur' in  username:
+    print("KULLANICI ADI DOĞRU")
+elif 'can' in username:
+    print("KULLANICI ADI DOĞRU")
+else:
+    print("kullanıcı adı yanlış")
+
+if password=='onur123' or password=="onurcan123":
+    print("ŞİFRE DOĞRU,Bir sayının;\nFaktöriyelini bulmak için (1)\nAsal sayı olduğunu öğrenmek için ise (2)'ye basınız.")
+else:
+    print("şifre yanlış\nLütfen tekrar deneyiniz.")
+
+girişrakamı = str(input("="))
+
+if  '1' in  girişrakamı:
+    print("Faktoriyel hesaplama girişi yapılmıştır.")
+elif '2' in girişrakamı:
+    print("Asal sayı girişi yapılmıştır.")
+else:
+    print("Yanlış tuşlama yapılmıştır.")
+
+sayi= int(input("Lütfen faktoriyelini almak istediğiniz sayıyı giriniz:"))
+faktoriyel = 1
+i=2
+while i <= sayi:
+        faktoriyel *= i
+        i += 1
+print(f"{sayi}! = {faktoriyel} sonuç = {faktoriyel}")
